@@ -17,12 +17,12 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ['lib']
 
-  s.required_ruby_version = '>= 2.4'
-  s.add_runtime_dependency 'activemodel', '>= 5.0', '< 8'
+  s.required_ruby_version = '>= 3.2'
+  s.add_runtime_dependency 'activemodel', '>= 5.0', '< 8.1'
   s.add_runtime_dependency 'addressable', '~> 2.5'
 
   s.add_development_dependency 'rake', '~> 13.0'
-  s.add_development_dependency 'rspec', '~> 3.0'
+  s.add_development_dependency 'rspec', '~> 3.13'
   s.add_development_dependency 'guard', '~> 2.6', '>= 2.6.1'
   s.add_development_dependency 'guard-rspec', '~> 4.2', '>= 4.2.0'
   s.add_development_dependency 'simplecov', '~> 0.8', '>= 0.8.2'
