@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.require_paths = ['lib']
 
   s.required_ruby_version = '>= 3.2'
-  s.add_runtime_dependency 'activemodel', '>= 5.0', '< 8.1'
+  s.add_runtime_dependency 'activemodel', '>= 5.0', '< 8.2'
   s.add_runtime_dependency 'addressable', '~> 2.5'
 
   s.add_development_dependency 'rake', '~> 13.0'
