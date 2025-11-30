@@ -14,7 +14,7 @@ describe RESTinPeace::ApiCall do
   describe '#get' do
     context 'with enough parameters for the template' do
       it 'calls the api with the parameters' do
-        expect(api).to receive(:get).with('/rip/1', {}).and_return(response)
+        expect(api).to receive(:get).with('/rip/1').and_return(response)
         api_call.get
       end
     end
@@ -55,7 +55,7 @@ describe RESTinPeace::ApiCall do
 
   describe '#delete' do
     it 'calls the api with the parameters' do
-      expect(api).to receive(:delete).with('/rip/1', {}).and_return(response)
+      expect(api).to receive(:delete).with('/rip/1').and_return(response)
       api_call.delete
     end
   end
